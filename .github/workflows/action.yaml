@@ -30,7 +30,7 @@ jobs:
         with:
           name: zipped-bundle
           path: ${{ github.sha }}.zip
-    upload:
+  upload:
       run-on: ubuntu-latest
       needs: build
       steps:
